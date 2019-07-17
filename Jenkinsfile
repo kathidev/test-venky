@@ -1,32 +1,27 @@
-     pipeline
-     { 
-	agent any
-
-	tools
-       	{
-		jdk 'JAVA_HOME'
-		maven 'MAVEN_HOME'
+ pipeline
+  {
+   agent any
+   tools
+  {  
+    jdk 'JAVA_HOME'
+    maven 'MAVEN_HOME'
        }
      }
-	stages
+      stages
 	{
-		 stage ('checkoutstage')
-	
+         stage('checkoutstage')
 	{
-
 	steps
-	
-		{
-		  sh 'checkout scm'
-               }
-      	    }
-     	  }
-		stage('contbuild') 
-		{
-		 steps
-
-		{ 
-		   sh 'mvn pacakge'
+	{
+	  sh 'checkout scm'
+        }
+      }
+    }
+        stage('contbuild') 
+	{
+	 steps
+         { 
+            sh 'mvn pacakge'
 	     }
 	   }
 
