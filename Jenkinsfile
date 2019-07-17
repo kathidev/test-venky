@@ -1,5 +1,4 @@
- pipeline
-  {
+ pipeline{
    agent any
    tools
   {  
@@ -17,7 +16,7 @@
         }
       }
     }
-        stage('contbuild') 
+        stage('Build') 
 	{
 	 steps
          { 
