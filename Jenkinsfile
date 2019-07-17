@@ -10,7 +10,7 @@
      }
 	stages
 	{
-		 stage (checkoutstage)
+		 stage ('checkoutstage')
 	
 	{
 
@@ -21,7 +21,7 @@
                }
       	    }
      	  }
-		stage(contbuild) 
+		stage('contbuild') 
 		{
 		 steps
 
