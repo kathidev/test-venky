@@ -5,7 +5,6 @@
     jdk 'JAVA_HOME'
     maven 'MAVEN_HOME'
        }
-     }
       stages
 	{
          stage('checkoutstage')
@@ -15,7 +14,6 @@
 	  sh 'checkout scm'
         }
       }
-    }
         stage('Build') 
 	{
 	 steps
@@ -23,5 +21,5 @@
             sh 'mvn pacakge'
 	     }
 	   }
-
-	
+	}
+    }
