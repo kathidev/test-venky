@@ -11,7 +11,7 @@
 	{
 	steps
 	{
-	  sh 'checkout scm'
+	  checkout scm
         }
       }
         stage('Build') 
