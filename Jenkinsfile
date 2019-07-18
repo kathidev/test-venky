@@ -18,7 +18,7 @@
 	{
 	 steps
          { 
-            sh 'mvn pacakge'
+            sh 'mvn clean package -DskipTests'
 	     }
 	   }
 	}
