@@ -32,7 +32,9 @@
 	{
 	steps
 	{
+		withDockerRegistry([credentialsId: 'docker-hub', url: "https://index.docker.io/v1/"]){
 		sh 'docker push ramdev/cerate:docker'
+	}
 	}
 	}
 	stage('Run docker container') 
